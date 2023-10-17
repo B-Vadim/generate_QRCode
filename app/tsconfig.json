@@ -1,0 +1,30 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "target": "ES2018",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "module": "esnext",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react",
+    "strict": false,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "rootDir": "./src",
+    "outDir": "./build",
+    "baseUrl": "./",
+    "typeRoots": ["node_modules/@types"],
+    "noImplicitAny": false,
+    "isolatedModules": true,
+    // "noUnusedLocals": true,
+    // "noUnusedParameters": true,
+    "noEmit": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}

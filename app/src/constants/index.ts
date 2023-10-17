@@ -1,0 +1,1 @@
+export const U_TOKET = 'u_token';

@@ -1,0 +1,6 @@
+{
+   "port": 5000,
+   "jwtSecretKey": "auth_link_token",
+   "mongoUri": "mongodb://localhost:27017/link_storage_project",
+   "baseURL": "http://localhost:5000"
+}

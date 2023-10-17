@@ -1,0 +1,199 @@
+/* VARIBLES */
+$colorPrimary: #00b96b;
+$colorWhite: #FFF;
+$colorActiveLink: #ffc403;
+
+
+.activeNavbarLink {
+  color: $colorActiveLink !important;
+  border-bottom: 1px solid;
+}
+
+#LayoutWrapperApp {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  .ant-layout-header {
+    background-color: $colorPrimary;
+    nav {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      a {
+        position: relative;
+        list-style-type: none;
+        color: $colorWhite;
+        font-size: 16px;
+        height: 22px;
+        line-height: 0.5;
+        border-radius: 5px;
+        padding: 7px;
+        &:not(:first-child) {
+          margin-left: 20px;
+        }
+        &:hover {
+         color: $colorActiveLink;
+        }
+      }
+      & button {
+        margin-left: auto;
+      }
+    }
+  }
+  .ant-layout-content {
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    .container {
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      .generateQRCodeWrapper {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & h1 {
+          margin-bottom: 30px;
+        }
+        .QRCodePicBlock {
+          margin-bottom: 30px;
+          position: relative;
+          display: flex;
+          width: 350px;
+          justify-content: center;
+          .ant-float-btn-group {
+            position: absolute !important;
+            inset-inline-end: 0;
+            inset-block-end: 0;
+            right: 0 !important;
+          }
+          .emptyQRCodePic {
+            width: 250px;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $colorWhite;
+            background-color: #FFF;
+            font-size: 64px;
+            border: 1px solid rgba(5, 5, 5, 0.06);
+            border-radius: 8px;
+            color: #bdbdbd;
+          }
+        }
+        .ant-input-wrapper {
+          margin-bottom: 20px;
+          .ant-input-affix-wrapper {
+            &:hover {
+              background-color: $colorWhite;
+            }
+            &:focus {
+              background-color: $colorWhite;
+            }
+          }
+        }
+      }
+      .linksListQRCodeWrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .linksListQRCodeAuthBlock {
+          width: 100%;
+          img {
+            width: 150px;
+            height: 150px;
+          }
+          .ant-list-item-meta {
+            background-color: #e7e7e7;
+            padding: 10px;
+            border-radius: 5px;
+            .ant-list-item-meta-content {
+              .ant-list-item-meta-title {
+                position: relative;
+                div {
+                  width: 100%;
+                  display: flex;
+                  justify-content: flex-start;
+                  align-items: flex-start;
+                  strong {
+                    font-size: 24px;
+                  }
+                  .anticon-delete {
+                    font-size: 20px;
+                    margin-right: 2px;
+                    margin-left: 17px;
+                  }
+                  .timeLink {
+                    display: block;
+                    margin-left: auto;
+                    font-size: 12px;
+                    color: cadetblue;
+                  }
+                }
+              }
+              div {
+                font-size: 16px;
+              }
+            }
+
+          }
+        }
+      }
+      .abouteQRCodeWrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+  .ant-layout-footer {
+    background-color: $colorPrimary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $colorWhite;
+  }
+}
+
+.authPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 100px;
+  .ant-form {
+    width: 400px !important;
+    .ant-form-item {
+      .ant-btn:nth-child(2) {
+        margin-left: 7px;
+      }
+    }
+  }
+}
+
+.ant-popover {
+  .QRCodePopoverBlock {
+    .ant-input {
+      margin-bottom: 8px;
+    }
+    .ant-btn {
+      height: 25px;
+      line-height: 0;
+    }
+    .ant-btn-default {
+      background-color: $colorWhite;
+      border-color: $colorPrimary;
+      color: $colorPrimary;
+      &:hover {
+        background-color: $colorPrimary;
+        color: $colorWhite;
+      }
+    }
+  }
+}
